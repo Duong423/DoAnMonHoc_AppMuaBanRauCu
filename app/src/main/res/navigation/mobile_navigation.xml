@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.taphoa.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_users"
+        android:name="com.example.taphoa.ui.profile.ProfileFragment"
+        android:label="@string/users"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.taphoa.ui.category.CategoryFragment"
+        android:label="@string/category1"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/nav_offers"
+        android:name="com.example.taphoa.OffersFragment"
+        android:label="@string/offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/nav_new_product"
+        android:name="com.example.taphoa.NewProductFragment"
+        android:label="@string/new_product"
+        tools:layout="@layout/fragment_new_product" />
+    <fragment
+        android:id="@+id/nav_my_orders"
+        android:name="com.example.taphoa.MyOrdersFragment"
+        android:label="@string/my_orders"
+        tools:layout="@layout/fragment_my_orders" />
+    <fragment
+        android:id="@+id/nav_cart_category1"
+        android:name="com.example.taphoa.CartCategoryFragment"
+        android:label="@string/cart_category"
+        tools:layout="@layout/fragment_cart_category" />
+</navigation>
